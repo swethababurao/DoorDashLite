@@ -11,6 +11,7 @@
         android:id="@+id/rl_progresscircle"
         android:layout_width="@dimen/restaurant_list_coverimage_width"
         android:layout_height="@dimen/restaurant_list_coverimage_height"
+        android:layout_alignParentLeft="true"
         android:gravity="center"
         android:visibility="visible">
 
@@ -77,8 +78,7 @@
     <LinearLayout
         android:id="@+id/ll_time"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_height="@dimen/restaurant_list_coverimage_height"
         android:layout_alignParentRight="true"
         android:layout_margin="@dimen/restaurant_list_time_margin">
 
@@ -90,7 +90,6 @@
             android:ellipsize="end"
             android:fontFamily="sans-serif-medium"
             android:maxLength="@integer/restaurant_list_time_max_length"
-            android:text="22 mins"
             android:textAppearance="?android:textAppearanceSmall"
             android:textColor="@android:color/black" />
     </LinearLayout>
