@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- Layout for individual list item in restuarant list -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/restaurant_list_main_margin">
+
+    <RelativeLayout
+        android:id="@+id/rl_progresscircle"
+        android:layout_width="@dimen/restaurant_list_coverimage_width"
+        android:layout_height="@dimen/restaurant_list_coverimage_height"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+    </RelativeLayout>
+
+    <!-- Imageview to render cover image of the restaurant -->
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="@dimen/restaurant_list_coverimage_width"
+        android:layout_height="@dimen/restaurant_list_coverimage_height"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="@dimen/restaurant_list_coverimage_margin"
+        android:adjustViewBounds="false"
+        android:padding="@dimen/restaurant_list_coverimage_padding"
+        android:visibility="gone">
+
+    </ImageView>
+
+    <!-- Layout to display the title and the description of the restaurant -->
+    <RelativeLayout
+        android:id="@+id/rl_info"
+        android:layout_width="@dimen/restaurant_list_title_desc_rl_width"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/ll_time"
+        android:layout_toRightOf="@+id/iv_logo">
+
+        <LinearLayout
+            android:id="@+id/ll_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/restaurant_list_title_desc_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-medium"
+                android:lines="@integer/restaurant_list_title_desc_max_lines"
+                android:maxLength="@integer/restaurant_list_title_max_length"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-medium"
+                android:lines="@integer/restaurant_list_title_desc_max_lines"
+                android:maxLength="@integer/restaurant_list_desc_max_length"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Layout to display the delivery time of the restaurant -->
+    <LinearLayout
+        android:id="@+id/ll_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/restaurant_list_time_margin">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-medium"
+            android:maxLength="@integer/restaurant_list_time_max_length"
+            android:text="22 mins"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+
+</RelativeLayout>

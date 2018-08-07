@@ -1,0 +1,23 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="restaurant_list_main_margin">10dp</dimen>
+    <dimen name="restaurant_list_coverimage_margin">10dp</dimen>
+    <dimen name="restaurant_list_title_desc_margin">10dp</dimen>
+    <dimen name="restaurant_list_coverimage_width">120dp</dimen>
+    <dimen name="restaurant_list_coverimage_height">80dp</dimen>
+    <dimen name="restaurant_list_coverimage_padding">5dp</dimen>
+    <dimen name="activity_main_discover_padding_start">50dp</dimen>
+    <dimen name="restaurant_list_time_margin">10dp</dimen>
+    <dimen name="restaurant_list_title_desc_rl_width">0dp</dimen>
+
+    <!-- Font sizes in sp -->
+    <dimen name="activity_main_discover_font">24sp</dimen>
+
+    <!-- Integers -->
+    <integer name="restaurant_list_time_max_length">10</integer>
+    <integer name="restaurant_list_title_max_length">40</integer>
+    <integer name="restaurant_list_desc_max_length">60</integer>
+    <integer name="restaurant_list_title_desc_max_lines">2</integer>
+</resources>

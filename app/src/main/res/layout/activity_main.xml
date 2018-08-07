@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.swethababurao.doordashlite.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_discover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_light"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingStart="@dimen/activity_main_discover_padding_start"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:text="@string/discover"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/activity_main_discover_font"
+        android:textStyle="bold" />
+
+    <!-- recycler view for displaying restuarant list -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_restuarantList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_discover"
+        android:transcriptMode="alwaysScroll"
+        tools:listitem="@layout/restuarant_list_item" />
+</RelativeLayout>
